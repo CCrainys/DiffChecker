@@ -24,7 +24,7 @@ for file in dir2:
 for file in new_dir1:
     r1=os.popen('%s %s'%(md5,os.path.join(folder1,file))).read().strip().split()[-1]
     r2=os.popen('%s %s'%(md5,os.path.join(folder2,file))).read().strip().split()[-1]
-    print(r1+" "+r2)
+    #print(r1+" "+r2)
     if(r1 == r2):
         print("%s match!"%file)
     else:
